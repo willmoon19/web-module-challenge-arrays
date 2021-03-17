@@ -171,8 +171,11 @@ Use the filterByWord function below to do the following:
 function filterByWord(array, string){
     const filteredArray = [];
     for (let i = 0; i < array.length; i++){
-        if ()
+        if (array[i].includes(string)){
+            filteredArray.push(array[i]);
+        }
     }
+    return filteredArray;
 }
 
 
